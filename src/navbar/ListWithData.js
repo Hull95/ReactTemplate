@@ -1,67 +1,22 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
-
-const Todo = ({ todo }) => {
-  return <div className="todo">{todo.text}</div>;
-};
-
-function TodoForm({ addTodo }) {
-  const [value, setValue] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!value) return;
-
-    addTodo(value);
-    setValue("");
-  };
-
-  return (
-    <Form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        className="input"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    </Form>
-  );
-}
 
 function ListWithData() {
-  const [todos, setToods] = useState([
-    {
-      text: "Lear about React",
-      isCompleted: false,
-    },
-    {
-      text: "Lear about React",
-      isCompleted: false,
-    },
-    {
-      text: "Lear about React",
-      isCompleted: false,
-    },
-    {
-      text: "Lear about React",
-      isCompleted: false,
-    },
-  ]);
+  const [name, setName] = useState("Marko");
 
-  const addTodo = (text) => {
-    const newTodos = [...todos, { text }];
-    setToods(newTodos);
+  const handleClickChange = () => {
+    setName("Stefan");
   };
-
   return (
-    <div className="app">
-      <div className="todo-list">
-        {todos.map((todo, index) => (
-          <Todo key={index} index={index} todo={todo} />
-        ))}
-
-        <TodoForm addTodo={addTodo} />
+    <div className="container">
+      <div className="row">
+        <div className="col-12 col-md-3 col-lg-3">
+          <button className="btn btn-success" onClick={handleClickChange}>
+            Change name
+          </button>
+        </div>
+        <div className="col-12 col-md-3 col-lg-3">
+          <label>{name}</label>
+        </div>
       </div>
     </div>
   );
