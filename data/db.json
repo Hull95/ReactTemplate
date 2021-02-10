@@ -1,41 +1,64 @@
 {
-    "blogs":[
-        {
-            "title":"My web site",
-            "body": "lorem ipsum...",
-            "author": "mario", 
-            "id": 1
-        },
-        {
-            "title":"My web site",
-            "body": "lorem ipsum...",
-            "author": "stef", 
-            "id": 2
-        },
-        {
-            "title":"My web site",
-            "body": "lorem ipsum...",
-            "author": "dex", 
-            "id": 3
-        },
-        {
-            "title":"My web site",
-            "body": "lorem ipsum...",
-            "author": "test", 
-            "id": 4
-        },
-        {
-            "title":"My web site",
-            "body": "lorem ipsum...",
-            "author": "test123", 
-            "id": 5
-        },
-        {
-            "title":"My web site",
-            "body": "lorem ipsum...",
-            "author": "po", 
-            "id": 6
-        }
-        
-    ]
+  "blogs": [
+    {
+      "title": "My web site",
+      "body": "lorem ipsum...",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "My web site",
+      "body": "lorem ipsum...",
+      "author": "stef",
+      "id": 2
+    },
+    {
+      "title": "My web site",
+      "body": "lorem ipsum...",
+      "author": "dex",
+      "id": 3
+    },
+    {
+      "title": "My web site",
+      "body": "lorem ipsum...",
+      "author": "test",
+      "id": 4
+    },
+    {
+      "title": "My web site",
+      "body": "lorem ipsum...",
+      "author": "test123",
+      "id": 5
+    },
+    {
+      "title": "My web site",
+      "body": "lorem ipsum...",
+      "author": "po",
+      "id": 6
+    },
+    {
+      "title": "StefPost",
+      "body": "PRoba dodavanja",
+      "author": "Ivan",
+      "id": 7
+    },
+    {
+      "title": "Stef proba disabled",
+      "body": "Disabled",
+      "author": "Milos",
+      "id": 8
+    },
+    {
+      "title": "Stef proba 2 ",
+      "body": "Stef",
+      "author": "Milos",
+      "id": 9
+    },
+    {
+      "title": "Stef proba 2 ",
+      "body": "Stef",
+      "author": "Milos",
+      "id": 10
+    }
+  ]
 }
