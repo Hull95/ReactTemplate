@@ -10,7 +10,7 @@ const AddForm = () => {
     <div className="home">
       {error && <div> {error} </div>}
       {isLoading && <div>Loading...</div>}
-      {blogs && <BlogList blogs={blogs} title="Tabela sa podacima" />}
+      {blogs && <BlogList blogs={blogs} title="Blogs" />}
     </div>
   );
 };

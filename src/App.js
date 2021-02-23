@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ListWithData from "./navbar/ListWithData";
 import AddForm from "./addForm/addFormData";
 import NavWM from "./components/NavWM";
 import BlogInfo from "./addForm/BlogInfo";
 import CreateNewBlog from "./addForm/CreateNewBlog";
+import Page404 from "./404page.js/Page404";
+import PreviewInformation from "./Information/PreviewInformation";
+import AllComponents from "./UIUXComponent/AllComponents";
 
 function App() {
   return (
@@ -14,14 +16,20 @@ function App() {
         <Route exact path="/">
           <AddForm />
         </Route>
-        <Route path="/change">
-          <ListWithData />
-        </Route>
         <Route path="/blogs/:id">
           <BlogInfo />
         </Route>
         <Route path="/create_blog">
           <CreateNewBlog />
+        </Route>
+        <Route path="/information">
+          <PreviewInformation />
+        </Route>
+        <Route path="/component">
+          <AllComponents />
+        </Route>
+        <Route path="*">
+          <Page404 />
         </Route>
       </Switch>
     </Router>
