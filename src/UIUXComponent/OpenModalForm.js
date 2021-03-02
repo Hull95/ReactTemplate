@@ -1,12 +1,20 @@
 import { Modal, Button, Tab, Tabs } from "react-bootstrap";
 import React, { useState } from "react";
 
+const maxLengthCharacter = 200;
+
 const OpenModalForm = () => {
   const [show, setShow] = useState(false);
+  const [key, setKey] = useState("first");
+  const [message, setMessage] = useState(0);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [key, setKey] = useState("first");
+  const recalculate = (e) => {
+    setMessage(e.target.value.length);
+    console.log(e.target.value.length);
+  };
 
   return (
     <div>
@@ -64,7 +72,18 @@ const OpenModalForm = () => {
                 </div>
                 <div className="col-12 col-md-6 col-lg-6">
                   <label>Naziv 1</label>
-                  <textarea type="text" rows="4" className="form-control" />
+                  <textarea
+                    type="text"
+                    rows="4"
+                    className="form-control"
+                    onChange={recalculate}
+                    maxLength="200"
+                  />
+                  <div className="text-right">
+                    <span>
+                      {message}/{maxLengthCharacter}
+                    </span>
+                  </div>
                 </div>
               </div>
             </Tab>
@@ -172,6 +191,46 @@ const OpenModalForm = () => {
                   </div>
                 </div>
               </div>
+            </Tab>
+            <Tab eventKey="table" title="Table">
+              <table className="table table-bordered mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col" className="w-25">
+                      #
+                    </th>
+                    <th scope="col" className="w-25">
+                      Name
+                    </th>
+                    <th scope="col" className="w-25">
+                      Street
+                    </th>
+                    <th scope="col" className="w-25">
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td className="text-right">
+                      <button className="btn btn-primary mr-2">Edit</button>
+                      <button className="btn btn-danger">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td className="text-right">
+                      <button className="btn btn-primary mr-2">Edit</button>
+                      <button className="btn btn-danger">Delete</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </Tab>
           </Tabs>
         </Modal.Body>

@@ -30,7 +30,7 @@ const LogInLogOut = () => {
               <h5 className="card-header">Log in</h5>
               <div className="card-body mt-4">
                 <form onSubmit={handleSubmit(onSubmit)}>
-                  <div className="input-group form-group">
+                  <div className="input-group form-group mb-0">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
                         <FaUser />
@@ -40,26 +40,40 @@ const LogInLogOut = () => {
                       type="text"
                       className="form-control"
                       name="user"
-                      id="user"
                       aria-invalid={errors.user ? "true" : "false"}
                       autoFocus
                       ref={register({ required: true })}
                     />
                   </div>
                   {errors.user && errors.user.type === "required" && (
-                    <span role="alert" className="sv-form-field-required">
-                      Blog author is required!
-                    </span>
+                    <div className="text-right">
+                      <small role="alert" className="sv-form-field-required">
+                        Username is required!
+                      </small>
+                    </div>
                   )}
-                  <div className="input-group form-group mt-3">
+                  <div className="input-group form-group mt-3 mb-0">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
                         <FaKey />
                       </span>
                     </div>
-                    <input type="password" className="form-control" required />
+                    <input
+                      type="password"
+                      className="form-control"
+                      name="password"
+                      aria-invalid={errors.password ? "true" : "false"}
+                      ref={register({ required: true })}
+                    />
                   </div>
-                  <div className="input-group form-group align-items-center remember">
+                  {errors.password && errors.password.type === "required" && (
+                    <div className="text-right">
+                      <small role="alert" className="sv-form-field-required">
+                        Password is required!
+                      </small>
+                    </div>
+                  )}
+                  <div className="input-group form-group align-items-center remember mt-3">
                     <input type="checkbox" className="mr-2" />
                     Remember Me
                   </div>
@@ -67,7 +81,7 @@ const LogInLogOut = () => {
                     <div className="row text-center">
                       <div className="col-12 col-md-12 col-lg-12 text-right">
                         <button type="submit" className="btn btn-primary w-100">
-                          Submit
+                          Login
                         </button>
                       </div>
                     </div>
@@ -94,45 +108,46 @@ const LogInLogOut = () => {
         )}
 
         {userMode === "create-new-user" && (
-          <div className="col-12  col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div className="col-12  col-sm-12 col-md-8 col-lg-8 col-lx-8">
             <div className="card">
               <h5 className="card-header">Log in</h5>
-              <div className="card-body mt-4">
+              <div className="card-body">
                 <form>
-                  <div className="input-group form-group">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <FaUser />
-                      </span>
+                  <div className="form-row">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-lx-6 mb-3">
+                      <label>First name: </label>
+                      <input type="text" className="form-control" autoFocus />
                     </div>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Username"
-                      autoFocus
-                    />
-                  </div>
-                  <div className="input-group form-group">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <FaKey />
-                      </span>
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-lx-6 mb-3">
+                      <label>Surname: </label>
+                      <input type="text" className="form-control" />
                     </div>
-                    <input
-                      type="password"
-                      className="form-control"
-                      placeholder="Password"
-                    />
                   </div>
-                  <div className="input-group form-group align-items-center remember">
-                    <input type="checkbox" className="mr-2" />
-                    Remember Me
+                  <div className="form-row">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-lx-12 mb-3">
+                      <label>Mobile number or email address: </label>
+                      <input type="text" className="form-control" />
+                    </div>
                   </div>
-                  <div className="form-group">
+                  <div className="form-row">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-lx-6 mb-3">
+                      <label>Password: </label>
+                      <input type="password" className="form-control" />
+                      <small>
+                        Use 8 or more characters with a mix of letters,numbers
+                        and symbols.
+                      </small>
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-lx-6 mb-3">
+                      <label>Repeat password: </label>
+                      <input type="password" className="form-control" />
+                    </div>
+                  </div>
+                  <div className="form-group mt-4">
                     <div className="row text-center">
                       <div className="col-12 col-md-12 col-lg-12 text-right">
-                        <button type="submit" className="btn btn-primary w-100">
-                          Submit
+                        <button type="submit" className="btn btn-primary w-25">
+                          Sign up
                         </button>
                       </div>
                     </div>
@@ -142,10 +157,10 @@ const LogInLogOut = () => {
                   </div>
                   <div className="form-group">
                     <div className="row text-center">
-                      <div className="col-12 col-md-12 col-lg-12 text-right">
+                      <div className="col-12 col-md-12 col-lg-12">
                         <button
                           type="submit"
-                          className="btn btn-secondary w-100"
+                          className="btn btn-secondary w-50"
                           onClick={handleClickBackToLogin}>
                           Login
                         </button>

@@ -7,6 +7,7 @@ import CreateNewBlog from "./addForm/CreateNewBlog";
 import Page404 from "./404page.js/Page404";
 import PreviewInformation from "./Information/PreviewInformation";
 import AllComponents from "./UIUXComponent/AllComponents";
+import ExampleUseEffect from "./example-useEffect/exampleUseEffect";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path="/component">
           <AllComponents />
+        </Route>
+        <Route path="/exampleUE">
+          <ExampleUseEffect />
         </Route>
         <Route path="*">
           <Page404 />

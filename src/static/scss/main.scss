@@ -80,10 +80,8 @@ a {
 }
 /* end */
 
-/* Works on Firefox */
+/* scroll */
 
-  
-  /* Works on Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 7px;
   }
@@ -97,6 +95,8 @@ a {
     border-radius: 20px;
     border: 3px solid rgb(253, 81, 81);
   }
+
+/* end scroll */
 
 .sv-login {
     a {
@@ -138,4 +138,7 @@ a {
         }
     }
 
+/* Slider  on off*/ 
 
+
+/* end slider on off

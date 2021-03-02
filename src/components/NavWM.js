@@ -7,6 +7,7 @@ function NavWM() {
         <Navbar.Brand href="/">Blog</Navbar.Brand>
         <Navbar.Brand href="/information">Information</Navbar.Brand>
         <Navbar.Brand href="/component">Components</Navbar.Brand>
+        <Navbar.Brand href="/exampleUE">EU</Navbar.Brand>
       </Navbar>
     </div>
   );
