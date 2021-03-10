@@ -31,8 +31,10 @@ const ExampleUseEffect = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-12 col-md-12 col-lg ">
-          <div onClick={changeToggleButton}>{toggleButton ? "Da" : "Ne"}</div>
+        <div className="col-12 col-md-12 col-lg-5">
+          <button onClick={changeToggleButton}>
+            {toggleButton ? "Da" : "Ne"}
+          </button>
         </div>
       </div>
     </div>

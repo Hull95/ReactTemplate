@@ -81,8 +81,7 @@ a h5 {
 }
 
 /* end */
-/* Works on Firefox */
-/* Works on Chrome, Edge, and Safari */
+/* scroll */
 *::-webkit-scrollbar {
   width: 7px;
 }
@@ -97,6 +96,7 @@ a h5 {
   border: 3px solid #fd5151;
 }
 
+/* end scroll */
 .sv-login a {
   font-size: 1.5rem;
 }
@@ -134,4 +134,11 @@ a h5 {
   margin-top: -3px;
   z-index: 1;
 }
+
+nav .navbar-brand:hover {
+  color: red !important;
+}
+
+/* Slider  on off*/
+/* end slider on off*/
 /*# sourceMappingURL=main.css.map */

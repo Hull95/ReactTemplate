@@ -138,7 +138,16 @@ a {
         }
     }
 
+    nav {
+        .navbar-brand {
+            &:hover{
+                color:red!important;
+            }
+        }
+    }
+
+
 /* Slider  on off*/ 
 
 
-/* end slider on off
+/* end slider on off*/

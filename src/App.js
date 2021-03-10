@@ -8,6 +8,7 @@ import Page404 from "./404page.js/Page404";
 import PreviewInformation from "./Information/PreviewInformation";
 import AllComponents from "./UIUXComponent/AllComponents";
 import ExampleUseEffect from "./example-useEffect/exampleUseEffect";
+import FormRedux from "./formRedux/formRedux";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route path="/exampleUE">
           <ExampleUseEffect />
+        </Route>
+        <Route path="/formRedux">
+          <FormRedux />
         </Route>
         <Route path="*">
           <Page404 />
