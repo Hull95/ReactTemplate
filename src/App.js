@@ -9,6 +9,10 @@ import PreviewInformation from "./Information/PreviewInformation";
 import AllComponents from "./UIUXComponent/AllComponents";
 import ExampleUseEffect from "./example-useEffect/exampleUseEffect";
 import FormRedux from "./formRedux/formRedux";
+import NewPostRedux from "./formRedux/createNewPost";
+import PreviewDetailPost from "./formRedux/previewDetailPost";
+import Map from "./Map/Map";
+import EditPost from "./formRedux/editPost";
 
 function App() {
   return (
@@ -35,6 +39,14 @@ function App() {
         </Route>
         <Route path="/formRedux">
           <FormRedux />
+        </Route>
+        <Route path="/create_post">
+          <NewPostRedux />
+        </Route>
+        <Route path="/preview_post/:id" component={PreviewDetailPost}></Route>
+        <Route path="/edit_post/:id" component={EditPost}></Route>
+        <Route path="/map">
+          <Map />
         </Route>
         <Route path="*">
           <Page404 />

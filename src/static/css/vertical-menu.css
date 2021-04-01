@@ -1,0 +1,15 @@
+.sv-vm-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 3px;
+  border: 2px solid #555555;
+  font-size: 1.6em;
+  padding: 5px 10px;
+}
+
+.sv-vm-button:hover {
+  color: red;
+}
+/*# sourceMappingURL=vertical-menu.css.map */

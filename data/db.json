@@ -1,70 +1,14 @@
 {
   "blogs": [
     {
-      "title": "My web site",
-      "body": "lorem ipsum...",
-      "author": "mario",
-      "id": 1
-    },
-    {
-      "title": "My web site",
-      "body": "lorem ipsum...",
-      "author": "stef",
+      "title": "My web site 123 45 ",
+      "blog_title": "123 345",
       "id": 2
     },
     {
-      "title": "My web site",
-      "body": "lorem ipsum...",
-      "author": "dex",
+      "title": "asdasda",
+      "blog_title": "dasdasd",
       "id": 3
-    },
-    {
-      "title": "My web site",
-      "body": "lorem ipsum...",
-      "author": "test",
-      "id": 4
-    },
-    {
-      "title": "My web site",
-      "body": "lorem ipsum...",
-      "author": "test123",
-      "id": 5
-    },
-    {
-      "title": "My web site",
-      "body": "lorem ipsum...",
-      "author": "po",
-      "id": 6
-    },
-    {
-      "title": "StefPost",
-      "body": "PRoba dodavanja",
-      "author": "Ivan",
-      "id": 7
-    },
-    {
-      "title": "Stef proba disabled",
-      "body": "Disabled",
-      "author": "Milos",
-      "id": 8
-    },
-    {
-      "title": "Stef proba 2 ",
-      "body": "Stef",
-      "author": "Milos",
-      "id": 9
-    },
-    {
-      "title": "Stef proba 2 ",
-      "body": "Stef",
-      "author": "Milos",
-      "id": 10
-    },
-    {
-      "title": "asdasd",
-      "body": "asd",
-      "author": "Ivan",
-      "id": 11
     }
   ]
 }

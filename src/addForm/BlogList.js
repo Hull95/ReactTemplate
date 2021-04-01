@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const BlogList = ({ blogs, title }) => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchResult, setSearchResult] = useState([]);
+  // const [searchTerm, setSearchTerm] = useState("");
+  // const [searchResult, setSearchResult] = useState([]);
 
-  const searchFilterData = blogs.filter((blogs) => {
-    return blogs.title.toLowerCase().includes(searchTerm.toLowerCase());
-  });
+  // const searchFilterData = blogs.filter((blogs) => {
+  //   return blogs.title.toLowerCase().includes(searchTerm.toLowerCase());
+  // });
 
   useEffect(() => {
-    setSearchResult(searchFilterData);
-  }, [searchTerm, blogs]);
+    // setSearchResult(searchFilterData);
+  }, [blogs]);
 
   return (
     <div className="container">
@@ -22,14 +22,14 @@ const BlogList = ({ blogs, title }) => {
       </div>
 
       <div className="row">
-        <div className="col-12 col-md-12 col-lg-4 text-left">
+        {/* <div className="col-12 col-md-12 col-lg-4 text-left">
           <input
             type="text"
             className="form-control"
             onChange={(e) => {
               setSearchTerm(e.target.value);
             }}></input>
-        </div>
+        </div> */}
         <div className="col-12 col-md-12 col-lg-4 text-left">
           <button className="btn btn-success">Search</button>
         </div>
@@ -41,7 +41,7 @@ const BlogList = ({ blogs, title }) => {
       </div>
 
       <div className="row">
-        {searchResult.map((blog, index) => (
+        {blogs.map((blog, index) => (
           <div className="col-12 col-md-4 col-lg-4 mt-3" key={index}>
             <Link to={`/blogs/${blog.id}`}>
               <div className="card">

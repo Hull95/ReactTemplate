@@ -7,7 +7,7 @@ const TextExampleToShow = () => {
     };
   });
 
-  return <p>Sakrij ovo</p>;
+  return <div></div>;
 };
 
 export default TextExampleToShow;

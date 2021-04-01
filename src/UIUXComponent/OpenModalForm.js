@@ -13,7 +13,7 @@ const OpenModalForm = () => {
 
   const recalculate = (e) => {
     setMessage(e.target.value.length);
-    console.log(e.target.value.length);
+    console.log(e.target.text.length);
   };
 
   return (

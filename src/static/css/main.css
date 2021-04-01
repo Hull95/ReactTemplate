@@ -1,3 +1,18 @@
+.sv-vm-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 3px;
+  border: 2px solid #555555;
+  font-size: 1.6em;
+  padding: 5px 10px;
+}
+
+.sv-vm-button:hover {
+  color: red;
+}
+
 .app {
   background-color: #209cee;
   padding: 30px;
@@ -13,31 +28,22 @@
 
 .todo {
   background-color: white;
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   padding: 5px;
   font-size: 12px;
   margin-bottom: 6px;
   border-radius: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .input {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   padding: 1rem;
   height: 2.25em;
 }
@@ -135,10 +141,49 @@ a h5 {
   z-index: 1;
 }
 
-nav .navbar-brand:hover {
+.nav-link:hover {
   color: red !important;
 }
 
 /* Slider  on off*/
+.mini-submenu {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.46);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 9px;
+  width: 42px;
+  text-align: center;
+}
+
+.mini-submenu:hover {
+  cursor: pointer;
+}
+
+.mini-submenu-left {
+  position: absolute;
+  top: 60px;
+  left: .5em;
+  z-index: 40;
+}
+
+.sidebar {
+  z-index: 45;
+}
+
+.main-row {
+  position: relative;
+  top: 0;
+}
+
+.slide-submenu {
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* end slider on off*/
+/*vm*/
 /*# sourceMappingURL=main.css.map */

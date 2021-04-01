@@ -1,14 +1,28 @@
-import { Navbar } from "react-bootstrap";
+import {
+  Navbar,
+  NavDropdown,
+  Nav,
+  Form,
+  Button,
+  FormControl,
+} from "react-bootstrap";
 
 function NavWM() {
   return (
     <div>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="/">Blog</Navbar.Brand>
-        <Navbar.Brand href="/information">Information</Navbar.Brand>
-        <Navbar.Brand href="/component">Components</Navbar.Brand>
-        <Navbar.Brand href="/exampleUE">Example toggle</Navbar.Brand>
-        <Navbar.Brand href="/formRedux">Form Redux</Navbar.Brand>
+      <Navbar expand="xl" bg="light">
+        <Navbar.Brand href="#home">React hooks</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/">Blog</Nav.Link>
+            <Nav.Link href="/information">Information</Nav.Link>
+            <Nav.Link href="/component">Components</Nav.Link>
+            <Nav.Link href="/exampleUE">Example toggle</Nav.Link>
+            <Nav.Link href="/formRedux">Form Redux</Nav.Link>
+            <Nav.Link href="/map">Map</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </div>
   );
