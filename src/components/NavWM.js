@@ -7,6 +7,8 @@ import {
   FormControl,
 } from "react-bootstrap";
 
+import { NavLink, Route } from "react-router-dom";
+
 function NavWM() {
   return (
     <div>
@@ -15,12 +17,27 @@ function NavWM() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">Blog</Nav.Link>
-            <Nav.Link href="/information">Information</Nav.Link>
-            <Nav.Link href="/component">Components</Nav.Link>
-            <Nav.Link href="/exampleUE">Example toggle</Nav.Link>
-            <Nav.Link href="/formRedux">Form Redux</Nav.Link>
-            <Nav.Link href="/map">Map</Nav.Link>
+            <NavLink className="nav-link" to="/">
+              Blog
+            </NavLink>
+            <NavLink className="nav-link" to="/information">
+              Information
+            </NavLink>
+            <NavLink className="nav-link" to="/component">
+              Components
+            </NavLink>
+            <NavLink className="nav-link" to="/exampleUE">
+              Example toggle
+            </NavLink>
+            <NavLink className="nav-link" to="/formRedux">
+              Form Redux
+            </NavLink>
+            <NavLink className="nav-link" to="/map">
+              Map
+            </NavLink>
+            <NavLink className="nav-link" to="/alldevmembers">
+              Developers
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -3,7 +3,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect, useParams, Link } from "react-router-dom";
 import { getData } from "../action";
-
+import DarkMode from "./DarkMode";
 
 function FormRedux(props) {
   const { id } = useParams();
@@ -27,11 +27,14 @@ function FormRedux(props) {
               Add new post
             </Link>
           </div>
+          <div>
+            <DarkMode />
+          </div>
         </div>
 
         <div className="row">
-          {content.data.map((item, index) => (
-            <div className="col-12 col-md-4 col-lg-4 mt-3" key={index}>
+          {content.data.map((item, id) => (
+            <div className="col-12 col-md-4 col-lg-4 mt-3" key={id}>
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-title">{item.title}</h5>

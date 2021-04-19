@@ -181,14 +181,37 @@ a {
 }
 
 .slide-submenu{
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.45); 
   display: inline-block;
   padding: 0 8px;
   border-radius: 4px;
   cursor: pointer;
+} 
+
+
+.nav-link { 
+    color: rgba(0,0,0,.5)!important;
+} 
+
+.sv-background {
+    color: red !important;
+    text-transform: uppercase;
 }
+
+.sv-background-blue {
+    color: blue !important;
+    text-transform: uppercase;
+}
+
+
 
 /* end slider on off*/
 
 
 /*vm*/
+
+/*todolist*/
+
+.sv-border {
+    border:1px solid black;
+}

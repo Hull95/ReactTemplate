@@ -18,16 +18,13 @@ const EditPost = (props) => {
     (state) => state.getDataForm.delete_redirect
   );
   const { register, handleSubmit, errors } = useForm();
-  //   const history = useHistory();
 
   const onSubmit = (data) => {
     dispatch(editOldPostData(data, id));
-    console.log("Clicked");
   };
 
   const handleDeleteButton = () => {
     dispatch(deleteOldPostData(id));
-    console.log("Clicked1");
   };
 
   useEffect(() => {

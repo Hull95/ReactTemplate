@@ -29,7 +29,7 @@ const PreviewDetailPost = (props) => {
   }
 
   return (
-    <div>
+    <>
       <div className="row justify-content-md-center mt-3">
         <div className="col-12 col-md-6 col-lg-6">
           <div className="form-row">
@@ -61,7 +61,7 @@ const PreviewDetailPost = (props) => {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
