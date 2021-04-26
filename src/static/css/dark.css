@@ -1,0 +1,46 @@
+body.dark-mode {
+    background-color: #343a40;
+    color:#4f9bd9;
+}
+
+body.dark-mode .navbar {
+    background: red !important;;
+}
+
+/* .dark-mode .nav-link, .dark-mode .dark-mode-icon{
+    color:#4f9bd9!important;
+  }
+  
+  .dark-mode .dark-mode-icon:hover{
+    color:white!important;
+  }
+  
+  .dark-mode .nav-link:hover {
+    color:white!important;
+  }
+  
+  .bg-light .nav-link:hover {
+    color:#4f9bd9!important;
+  }
+  
+  .dark-mode button:hover {
+    color:white!important;
+  }
+  
+  .bg-light button:hover {
+    color:#4f9bd9!important;
+  }
+  
+  .dark-mode button {
+    color:#4f9bd9!important;
+  }
+  
+  
+  .dark-mode button:focus, .bg-light button:focus {
+   box-shadow: none!important;
+  }
+  
+  body .dark-mode {
+    background-color: red;
+  }
+   */

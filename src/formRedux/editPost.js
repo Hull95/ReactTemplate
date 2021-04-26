@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   editOldPostData,
   viewData,
@@ -17,7 +17,7 @@ const EditPost = (props) => {
   const delete_redirect = useSelector(
     (state) => state.getDataForm.delete_redirect
   );
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
     dispatch(editOldPostData(data, id));
@@ -50,7 +50,7 @@ const EditPost = (props) => {
   }
 
   return (
-    <div>
+    <>
       <div className="row justify-content-md-center mt-3">
         <div className="col-12 col-md-6 col-lg-6">
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -89,7 +89,7 @@ const EditPost = (props) => {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -16,13 +16,17 @@ const OpenModalForm = () => {
   };
 
   return (
-    <div>
-      <button
-        className="btn btn-primary open-form"
-        variant="primary"
-        onClick={handleShow}>
-        Form 1
-      </button>
+    <div className="container pt-4">
+      <div className="row">
+        <div className="col-12 col-md-12 col-lg-4 col-xl-4">
+          <button
+            className="btn btn-primary open-form w-100"
+            variant="primary"
+            onClick={handleShow}>
+            Form 1
+          </button>
+        </div>
+      </div>
 
       <Modal show={show} size="lg" onHide={handleClose}>
         <Modal.Header closeButton>

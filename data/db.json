@@ -1,10 +1,9 @@
 {
   "blogs": [
     {
-      "id": 1,
-      "name": "Dev 1",
-      "position": "Frontend",
-      "year": 24
+      "title": "Stef",
+      "blog_title": "test",
+      "id": 1
     },
     {
       "title": "Stef",
@@ -44,6 +43,11 @@
       "title": "123",
       "blog_title": "12",
       "id": 8
+    },
+    {
+      "title": "Stef :D ",
+      "blog_title": "213",
+      "id": 9
     }
   ]
 }

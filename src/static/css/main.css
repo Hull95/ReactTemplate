@@ -1,3 +1,21 @@
+
+.font-size-20 {
+  font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sv-vm-button {
   display: flex;
   align-items: center;
@@ -14,7 +32,7 @@
 }
 
 .app {
-  background-color: #209cee;
+  background-color: #4f9bd9;
   padding: 30px;
   height: 100vh;
 }
@@ -93,13 +111,13 @@ a h5 {
 }
 
 *::-webkit-scrollbar-track {
-  background: gray;
+  background: white;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #fd5151;
+  background-color: #4f9bd9;
   border-radius: 20px;
-  border: 3px solid #fd5151;
+  border: 3px solid #4f9bd9;
 }
 
 /* end scroll */
@@ -139,10 +157,6 @@ a h5 {
   top: 50%;
   margin-top: -3px;
   z-index: 1;
-}
-
-.nav-link:hover {
-  color: red !important;
 }
 
 /* Slider  on off*/
@@ -188,13 +202,17 @@ a h5 {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
+.dropdown-item:active{
+  background-color: #e9ecef!important;
+}
+
 .sv-background {
   color: red !important;
   text-transform: uppercase;
 }
 
 .sv-background-blue {
-  color: blue !important;
+  color: #4f9bd9 !important;
   text-transform: uppercase;
 }
 
@@ -204,4 +222,12 @@ a h5 {
 .sv-border {
   border: 1px solid black;
 }
+
+
+.sv-img-navbar-logo img {
+  width: 25px;
+  margin-right:5px;
+}
 /*# sourceMappingURL=main.css.map */
+
+/* Dark mode */

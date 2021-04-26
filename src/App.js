@@ -1,53 +1,33 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import AddForm from "./addForm/addFormData";
-import NavWM from "./components/NavWM";
-import BlogInfo from "./addForm/BlogInfo";
-import CreateNewBlog from "./addForm/CreateNewBlog";
+import NavWM from "./NavbarComponent/NavWM";
 import Page404 from "./404page.js/Page404";
-import PreviewInformation from "./Information/PreviewInformation";
-import AllComponents from "./UIUXComponent/AllComponents";
+import PreviewInformation from "./InformationWithoutRedux/PreviewInformation";
+import PageWithComponent from "./UIUXComponent/PageWithComponent";
 import TodoList from "./TodoExample/TodoList";
 import FormRedux from "./formRedux/formRedux";
 import NewPostRedux from "./formRedux/createNewPost";
 import PreviewDetailPost from "./formRedux/previewDetailPost";
-import Map from "./Map/Map";
 import EditPost from "./formRedux/editPost";
 import AllDevMembers from "./DevTeam/AllDevMembers";
+import ReactLogicPage from "./ReactHomePage/ReactLogicPage";
+import SettingsPanel from "./SettingsPanel/SettingsPanel";
 
 function App() {
   return (
     <Router>
       <NavWM />
       <Switch>
-        <Route exact path="/">
-          <AddForm />
-        </Route>
-        <Route path="/blogs/:id">
-          <BlogInfo />
-        </Route>
-        <Route path="/create_blog">
-          <CreateNewBlog />
-        </Route>
-        <Route path="/information">
-          <PreviewInformation />
-        </Route>
-        <Route path="/component">
-          <AllComponents />
-        </Route>
+        <Route exact path="/" component={ReactLogicPage} />
+        <Route path="/information" component={PreviewInformation} />
+        <Route path="/component" component={PageWithComponent} />
         <Route path="/exampleUE" component={TodoList} />
-        <Route path="/formRedux">
-          <FormRedux />
-        </Route>
-        <Route path="/create_post">
-          <NewPostRedux />
-        </Route>
-        <Route path="/preview_post/:id" component={PreviewDetailPost}></Route>
-        <Route path="/edit_post/:id" component={EditPost}></Route>
-        <Route path="/map">
-          <Map />
-        </Route>
-        <Route path="/alldevmembers" component={AllDevMembers}></Route>
+        <Route path="/formRedux" component={FormRedux} />
+        <Route path="/create_post" component={NewPostRedux} />
+        <Route path="/preview_post/:id" component={PreviewDetailPost} />
+        <Route path="/edit_post/:id" component={EditPost} />
+        <Route path="/alldevmembers" component={AllDevMembers} />
+        <Route path="/settings" component={SettingsPanel} />
         <Route path="*">
           <Page404 />
         </Route>

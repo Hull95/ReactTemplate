@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import TitlePage from "../CustomComponent/TitlePage";
 
 function TodoList() {
   const { register, handleSubmit } = useForm();
@@ -54,11 +55,7 @@ function TodoList() {
 
   return (
     <div className="container pt-4 pb-4">
-      <div className="row text-center d-flex justify-content-center">
-        <div className="col-12 col-md-12 col-lg-12 col-xl-12 p-3 sv-border">
-          TODO LIST:
-        </div>
-      </div>
+      <TitlePage nameTitle={"Todo list"} />
       <Form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-row pt-4 pb-4 ">
           <div className="col-12 col-md-12 col-lg-12 col-xl-12 pt-3 pt-3">

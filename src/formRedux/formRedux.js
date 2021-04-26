@@ -1,12 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect, useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { getData } from "../action";
-import DarkMode from "./DarkMode";
+import DarkMode from "../CustomComponent/DarkMode";
 
-function FormRedux(props) {
-  const { id } = useParams();
+function FormRedux() {
   const content = useSelector((state) => state.getDataForm);
 
   const dispatch = useDispatch();
@@ -26,9 +25,6 @@ function FormRedux(props) {
             <Link className="btn btn-success" to="/create_post">
               Add new post
             </Link>
-          </div>
-          <div>
-            <DarkMode />
           </div>
         </div>
 

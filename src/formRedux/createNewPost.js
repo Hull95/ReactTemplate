@@ -1,11 +1,10 @@
 import { useForm } from "react-hook-form";
 import { createNewPostRedux } from "../action/index";
-import { useDispatch, useSelector } from "react-redux";
-import { useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 
 const NewPostRedux = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit } = useForm();
   const history = useHistory();
   const dispatch = useDispatch();
 
@@ -15,7 +14,7 @@ const NewPostRedux = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="row justify-content-md-center mt-3">
         <div className="col-12 col-md-6 col-lg-6">
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -51,7 +50,7 @@ const NewPostRedux = () => {
           </form>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,9 +1,6 @@
-import LogInLogOut from "./LoginLogOut";
-import OpenModalForm from "./OpenModalForm";
-
-const AllComponents = () => {
+const FieldInForm = () => {
   return (
-    <div className="container mt-5">
+    <div className="container pt-5">
       <div className="form-row mt-3">
         <div className="col-12 col-sm-12 col-md-6 col-lg-5  col-lx-5 mb-3">
           <label>Naziv 1</label>
@@ -48,19 +45,8 @@ const AllComponents = () => {
           </select>
         </div>
       </div>
-      <hr />
-      <div className="container">
-        <div className="d-flex justify-content-right">
-          <div className="col-12 col-md-3 col-lg-3">
-            <OpenModalForm />
-          </div>
-        </div>
-      </div>
-      <hr />
-      <LogInLogOut />
-      <hr />
     </div>
   );
 };
 
-export default AllComponents;
+export default FieldInForm;

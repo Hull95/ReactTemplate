@@ -19,7 +19,7 @@ function AllDevMembers() {
   }, []);
 
   return (
-    <div>
+    <>
       <div className="container pt-4 pb-4">
         <div className="row">
           <div className="col-12 col-md-12 col-lg-4 col-xl-4">
@@ -61,7 +61,7 @@ function AllDevMembers() {
       {showFront && <Frontend dataParentToChild={previewProfileData} />}
       {showBack && <Backend dataParentToChild={previewProfileData} />}
       {showAllData && <ShowAll dataParentToChild={previewProfileData} />}
-    </div>
+    </>
   );
 }
 

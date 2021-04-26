@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FaKey, FaUser } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
@@ -22,10 +21,10 @@ const LogInLogOut = () => {
   };
 
   return (
-    <div className="container sv-login">
-      <div className="d-flex justify-content-right h-100">
+    <div className="container sv-login pt-4 pb-4">
+      <div className="row d-flex justify-content-right h-100">
         {userMode === "login" && (
-          <div className="col-12  col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div className="col-12 col-md-12 col-lg-4 col-xl-4">
             <div className="card">
               <h5 className="card-header">Log in</h5>
               <div className="card-body mt-4">

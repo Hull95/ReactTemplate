@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,KAAK;EACjB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,OAAe;EACjC,SAAS,EAAE,KAAK;EAChB,OAAO,EAAE,QAAQ;CAKpB;;AAbD,AAUI,aAVS,AAUR,MAAM,CAAC;EACJ,KAAK,EAAC,GACV;CAAC",
-    "sources": [
-        "../scss/vertical-menu.scss"
-    ],
-    "names": [],
-    "file": "vertical-menu.css"
-}

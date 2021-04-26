@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-
-function ShowAll({ dataParentToChild }) {
+const ShowAll = ({ dataParentToChild }) => {
   return (
-    <div>
+    <>
       <div className="container">
         <div className="row">
           {dataParentToChild.data.map((item, index) => (
@@ -26,8 +24,8 @@ function ShowAll({ dataParentToChild }) {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
-}
+};
 
 export default ShowAll;

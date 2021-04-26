@@ -7,7 +7,7 @@ function Frontend({ dataParentToChild }) {
   );
 
   return (
-    <div>
+    <>
       <div className="container">
         <div className="row">
           {filterData.map((item, index) => (
@@ -19,7 +19,7 @@ function Frontend({ dataParentToChild }) {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
