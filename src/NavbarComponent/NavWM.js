@@ -35,6 +35,17 @@ function NavWM() {
             <NavLink className="nav-link" to="/alldevmembers">
               Position in team
             </NavLink>
+            <NavDropdown title="Components" id="basic-nav-dropdown">
+              <NavDropdown.Item className="nav-link" href="/compTest1">
+                Component 1
+              </NavDropdown.Item>
+              <NavDropdown.Item className="nav-link" href="/componentTest">
+                Component 2
+              </NavDropdown.Item>
+              <NavDropdown.Item className="nav-link" href="/componentsRandom">
+                Component 3
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav>
           <Nav className="float-right">
             {navBarSwitcher}

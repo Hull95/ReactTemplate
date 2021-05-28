@@ -11,23 +11,11 @@ export const getData = () => {
   };
 };
 
-export const increment = () => {
-  return {
-    type: "INCREMENT",
-  };
-};
-
-export const decrement = () => {
-  return {
-    type: "DECREMENT",
-  };
-};
-
-export const fetchGetData = () => {
-  return {
-    type: "FETCH_DATA",
-  };
-};
+// export const fetchGetData = () => {
+//   return {
+//     type: "FETCH_DATA",
+//   };
+// };
 
 export const createNewPostRedux = (data) => {
   return function (dispatch) {

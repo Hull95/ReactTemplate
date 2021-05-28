@@ -91,9 +91,9 @@ function TodoList() {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 col-md-12 col-lg-2 col-xl-2 text-right">
+          <div className="col-12 col-md-12 col-lg-12 col-xl-12 text-right">
             <button
-              className="btn btn-success w-100 mr-2"
+              className="btn btn-success w-25"
               type="submit"
               disabled={Boolean(error)}>
               Add

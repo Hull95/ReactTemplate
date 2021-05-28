@@ -12,6 +12,8 @@ import EditPost from "./formRedux/editPost";
 import AllDevMembers from "./DevTeam/AllDevMembers";
 import ReactLogicPage from "./ReactHomePage/ReactLogicPage";
 import SettingsPanel from "./SettingsPanel/SettingsPanel";
+import ComponentTest1 from "./ComponentTesting/ComponentTest1";
+import { RandomComponent } from "./ComponentTesting/RandomComponent";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/edit_post/:id" component={EditPost} />
         <Route path="/alldevmembers" component={AllDevMembers} />
         <Route path="/settings" component={SettingsPanel} />
+        <Route path="/compTest1" component={ComponentTest1} />
+        <Route path="/componentsRandom" component={RandomComponent} />
         <Route path="*">
           <Page404 />
         </Route>
