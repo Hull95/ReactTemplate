@@ -16,7 +16,7 @@ function AllDevMembers() {
 
   useEffect(() => {
     dispatch(getDataProfile());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

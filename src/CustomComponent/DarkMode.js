@@ -14,13 +14,13 @@ const DarkMode = () => {
     }
   }, [isLight]);
 
+  const handleChangeMode = () => {
+    setIsLight((isLight) => (isLight === "light" ? "dark" : "light"));
+  };
+
   return (
     <>
-      <button
-        className="btn"
-        onClick={() =>
-          setIsLight((isLight) => (isLight === "light" ? "dark" : "light"))
-        }>
+      <button className="btn" onClick={handleChangeMode}>
         {isLight === "light" ? (
           <FiSun className="font-size-20" />
         ) : (

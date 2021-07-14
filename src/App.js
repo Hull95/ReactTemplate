@@ -14,6 +14,9 @@ import ReactLogicPage from "./ReactHomePage/ReactLogicPage";
 import SettingsPanel from "./SettingsPanel/SettingsPanel";
 import ComponentTest1 from "./ComponentTesting/ComponentTest1";
 import { RandomComponent } from "./ComponentTesting/RandomComponent";
+import { CreateTodo } from "./ComponentTesting/CreateTodo";
+import { EditTodo } from "./ComponentTesting/EditTodo";
+import { LoginComponent } from "./Components/LoginComponent";
 
 function App() {
   return (
@@ -32,6 +35,9 @@ function App() {
         <Route path="/settings" component={SettingsPanel} />
         <Route path="/compTest1" component={ComponentTest1} />
         <Route path="/componentsRandom" component={RandomComponent} />
+        <Route path="/create_todo_post" component={CreateTodo} />
+        <Route path="/edit_post_todo/:id" component={EditTodo} />
+        <Route path="/componentLogin" component={LoginComponent} />
         <Route path="*">
           <Page404 />
         </Route>

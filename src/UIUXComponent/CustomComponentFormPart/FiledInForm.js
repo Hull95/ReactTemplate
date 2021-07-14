@@ -1,50 +1,65 @@
+import { useEffect, useState } from "react";
+
 const FieldInForm = () => {
+  const [newArray, setNewArray] = useState();
+  const arrayData = [
+    {
+      age: 23,
+      name: "Test",
+      hair: [
+        {
+          blue: true,
+        },
+      ],
+    },
+    {
+      age: 14,
+      name: "Test1",
+    },
+    {
+      age: 10,
+      name: "Test2",
+    },
+  ];
+
+  const keyArray = () => {
+    arrayData.forEach((item) => {
+      for (let data in item) {
+        if (item.hasOwnProperty(data)) {
+          if (data) {
+            console.log(`${data} = ${item[data]}`);
+          }
+        }
+      }
+    });
+  };
+
+  const array = [1, 23, 3, 433, 123, 6, 546, 8];
+
+  const sortItem = (result) => {
+    return result.sort((a, b) => a - b);
+  };
+
+  const highNumber = (n) => {
+    let result = [];
+    array.forEach((item) => {
+      if (item > n) {
+        result.push(item);
+      }
+    });
+
+    return sortItem(result);
+  };
+
+  console.log(highNumber(3));
+
+  // keyArray();
+
   return (
-    <div className="container pt-5">
-      <div className="form-row mt-3">
-        <div className="col-12 col-sm-12 col-md-6 col-lg-5  col-lx-5 mb-3">
-          <label>Naziv 1</label>
-          <input type="text" className="form-control" />
-        </div>
-        <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-lx-5">
-          <label>Naziv 1</label>
-          <input type="text" className="form-control" />
-        </div>
-      </div>
-      <div className="form-row mt-3">
-        <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-lx-5 mb-3">
-          <label>Naziv 1</label>
-          <input type="text" className="form-control" />
-        </div>
-        <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-lx-5">
-          <label>Naziv 1</label>
-          <input type="text" className="form-control" />
-        </div>
-      </div>
-      <div className="form-row mt-3">
-        <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-lx-4 mb-3">
-          <label>Naziv 1</label>
-          <input type="text" className="form-control" />
-        </div>
-      </div>
-      <div className="form-row mt-3">
-        <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-lx-5 mb-3">
-          <label>Naziv 1</label>
-          <input type="text" className="form-control" />
-        </div>
-        <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-lx-5">
-          <label>Select 1</label>
-          <select
-            className="form-select form-control"
-            aria-label="Default select example">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-      </div>
+    <div>
+      Practice
+      <button>Run function</button>
+      <p></p>
     </div>
   );
 };

@@ -30,7 +30,7 @@ function NavWM() {
               </NavDropdown.Item>
             </NavDropdown>
             <NavLink className="nav-link" to="/component">
-              Components examples
+              Practice
             </NavLink>
             <NavLink className="nav-link" to="/alldevmembers">
               Position in team
@@ -39,7 +39,7 @@ function NavWM() {
               <NavDropdown.Item className="nav-link" href="/compTest1">
                 Component 1
               </NavDropdown.Item>
-              <NavDropdown.Item className="nav-link" href="/componentTest">
+              <NavDropdown.Item className="nav-link" href="/componentLogin">
                 Component 2
               </NavDropdown.Item>
               <NavDropdown.Item className="nav-link" href="/componentsRandom">

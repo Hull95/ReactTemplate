@@ -1,21 +1,24 @@
 import axios from "axios";
 
 export const getData = () => {
-  return (dispatch) => {
-    axios.get("http://localhost:8000/blogs").then((res) =>
+  return async function (dispatch) {
+    try {
+      const result = await axios.get("http://localhost:8000/blogs");
       dispatch({
         type: "FETCH_DATA",
-        data: res.data,
-      })
-    );
+        data: result.data,
+      });
+    } catch (err) {
+      if (err) {
+        dispatch({
+          type: "ERROR_MESSAGE",
+          payload: err.message,
+        });
+      }
+      console.log(123);
+    }
   };
 };
-
-// export const fetchGetData = () => {
-//   return {
-//     type: "FETCH_DATA",
-//   };
-// };
 
 export const createNewPostRedux = (data) => {
   return function (dispatch) {

@@ -3,7 +3,6 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getData } from "../action";
-import DarkMode from "../CustomComponent/DarkMode";
 
 function FormRedux() {
   const content = useSelector((state) => state.getDataForm);
@@ -13,6 +12,8 @@ function FormRedux() {
   useEffect(() => {
     dispatch(getData());
   }, []);
+
+  console.log(content);
 
   return (
     <div className="App">
@@ -47,7 +48,7 @@ function FormRedux() {
                   <Link
                     className="btn btn-success"
                     to={`/edit_post/${item.id}`}>
-                    Edit
+                    Edit1
                   </Link>
                 </div>
               </div>

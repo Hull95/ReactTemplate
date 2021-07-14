@@ -1,20 +1,19 @@
-const initState = {
+const initialState = {
   data: [],
   edit_redirect: false,
   previewPost: {},
   delete_redirect: false,
-  error_message: "",
 };
 
-const fetchData = (state = initState, action) => {
+const TodoGetData = (state = initialState, action) => {
   switch (action.type) {
-    case "FETCH_DATA":
+    case "FETCH_TODO_DATA":
       return {
         ...state,
         data: action.data,
         edit_redirect: false,
       };
-    case "ADD_NEW_POST":
+    case "CREATE_TODO_ACTION":
       return {
         ...state,
         data: [],
@@ -31,25 +30,20 @@ const fetchData = (state = initState, action) => {
         edit_redirect: false,
         previewPost: {},
       };
-    case "EDIT_POST":
+    case "EDIT_TODO_DATA":
       return {
         ...state,
         edit_data: action.payload,
         edit_redirect: true,
       };
-    case "DELETE_POST":
+    case "DELETE_TODO_DATA":
       return {
         ...state,
         delete_redirect: true,
-      };
-    case "ERROR_MESSAGE":
-      return {
-        ...state,
-        error_message: action.payload,
       };
     default:
       return state;
   }
 };
 
-export default fetchData;
+export default TodoGetData;

@@ -14,7 +14,7 @@ function Frontend({ dataParentToChild }) {
             <CardProfile
               name={item.name}
               position={item.position}
-              index={index}
+              key={index}
             />
           ))}
         </div>

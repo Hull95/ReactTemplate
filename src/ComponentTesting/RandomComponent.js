@@ -1,65 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { TodoAction, deleteOldPostData } from "../action/TodoAction";
+import { Link, Redirect, useParams } from "react-router-dom";
 
-export const RandomComponent = () => {
-  const [infoText, setInfoText] = useState("");
-  const [items, setItems] = useState([
-    {
-      id: "1",
-      infoText: "Robin",
-      lastname: "Wieruch",
-    },
-    {
-      id: "2",
-      infoText: "Dave",
-      lastname: "Davidds",
-    },
-  ]);
+export const RandomComponent = (props) => {
+  const { id } = useParams();
+  const previewTodoData = useSelector((state) => state.getDataTodo);
+  const delete_redirect = useSelector(
+    (state) => state.getDataTodo.delete_redirect
+  );
+  const dispatch = useDispatch();
 
-  const onSubmit = () => {
-    setItems((items) => [...items, { infoText }]);
+  useEffect(() => {
+    dispatch(TodoAction());
+  }, [dispatch]);
+
+  const handleDeleteTodo = () => {
+    dispatch(deleteOldPostData(id));
   };
 
-  const handleChangeInfoText = (e) => {
-    setInfoText(e.target.value);
-  };
-
-  const handleDelete = (id) => {
-    const newList = items.filter((item) => item.id !== id);
-    setItems(newList);
-  };
+  if (delete_redirect) {
+    return <Redirect to="/componentsRandom" />;
+  }
 
   return (
     <>
       <div className="container">
-        <div className="row pt-5">
-          <div className="col-4">
-            <input
-              type="text"
-              className="form-control"
-              name="infoText"
-              value={infoText}
-              onChange={handleChangeInfoText}
-            />
-            <button className="btn" type="submit" onClick={onSubmit}>
-              +
-            </button>
+        <div className="row">
+          <div className="col-12 col-md-12 col-lg-6 col-xl-6">
+            <Link className="btn btn-success" to="/create_todo_post">
+              Add new post
+            </Link>
           </div>
         </div>
-
-        <div className="row pt-5">
-          <div className="col-4">
-            {items &&
-              items.map((item, id) => (
-                <div className="col-12 col-md-4 col-lg-4 mt-3" key={id}>
-                  <p>{item.infoText}</p>
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => handleDelete(item.id)}>
-                    -
-                  </button>
-                </div>
-              ))}
-          </div>
+        <div className="row">
+          {previewTodoData.data.map((item, key) => (
+            <div className="col-4 border m-3" key={key}>
+              <h3>{item.title}</h3>
+              <Link
+                className="btn btn-success"
+                to={`/edit_post_todo/${item.id}`}>
+                Edit
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </>
