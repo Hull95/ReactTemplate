@@ -32,8 +32,14 @@ function NavWM() {
             <NavLink className="nav-link" to="/component">
               Practice
             </NavLink>
+            <NavLink className="nav-link" to="/react_redux">
+              React Image
+            </NavLink>
             <NavLink className="nav-link" to="/alldevmembers">
               Position in team
+            </NavLink>
+            <NavLink className="nav-link" to="/react_form">
+              React Form
             </NavLink>
             <NavDropdown title="Components" id="basic-nav-dropdown">
               <NavDropdown.Item className="nav-link" href="/compTest1">

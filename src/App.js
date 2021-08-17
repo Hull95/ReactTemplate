@@ -17,6 +17,8 @@ import { RandomComponent } from "./ComponentTesting/RandomComponent";
 import { CreateTodo } from "./ComponentTesting/CreateTodo";
 import { EditTodo } from "./ComponentTesting/EditTodo";
 import { LoginComponent } from "./Components/LoginComponent";
+import {ReactReduxPractice} from "./ReactReduxPracticeFolder/ReactReduxPractice"
+import ReactFormExample from "./ReactFormExample/ReactFormExample";
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
         <Route path="/create_todo_post" component={CreateTodo} />
         <Route path="/edit_post_todo/:id" component={EditTodo} />
         <Route path="/componentLogin" component={LoginComponent} />
+        <Route path="/react_redux" component={ReactReduxPractice} />
+        <Route path="/react_form" component={ReactFormExample} />
         <Route path="*">
           <Page404 />
         </Route>

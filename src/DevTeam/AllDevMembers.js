@@ -11,7 +11,7 @@ function AllDevMembers() {
   const [showAllData, setShowAll] = useState(true);
 
   const previewProfileData = useSelector((state) => state.getDataFormProfile);
-
+  console.log(previewProfileData)
   const dispatch = useDispatch();
 
   useEffect(() => {

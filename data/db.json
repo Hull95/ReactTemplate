@@ -1,21 +1,14 @@
 {
   "blogs": [
     {
-      "title": "Stef",
+      "title": "Stef2",
       "blog_title": "test",
       "id": 1
     },
     {
-      "id": 5,
-      "name": "Dev 5",
-      "position": "Frontend",
-      "year": 28
-    },
-    {
-      "id": 6,
-      "name": "Dev 6",
-      "position": "Backend",
-      "year": 21
+      "title": "123",
+      "blog_title": "123",
+      "id": 6
     },
     {
       "title": "Stef",
@@ -48,7 +41,7 @@
       "id": 12
     },
     {
-      "title": "Test history",
+      "title": "Test history1",
       "blog_title": "test",
       "id": 13
     },

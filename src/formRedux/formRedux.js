@@ -13,7 +13,6 @@ function FormRedux() {
     dispatch(getData());
   }, []);
 
-  console.log(content);
 
   return (
     <div className="App">

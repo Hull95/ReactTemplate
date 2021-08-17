@@ -1,0 +1,46 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "name": "Stef",
+      "age": 25,
+      "city": "Banja Luka"
+    },
+    {
+      "id": 2,
+      "name": "Marko",
+      "age": 34,
+      "city": "Sarajevo"
+    },
+    {
+      "id": 3,
+      "name": "Dan",
+      "age": 17,
+      "city": "NewYork"
+    },
+    {
+      "id": 4,
+      "name": "Cab",
+      "age": 43,
+      "city": "Berlin"
+    },
+    {
+      "id": 5,
+      "name": "David",
+      "age": 44,
+      "city": "Munich"
+    },
+    {
+      "id": 6,
+      "name": "Kevin",
+      "age": 19,
+      "city": "Madrid"
+    },
+    {
+      "id": 7,
+      "name": "Wendell",
+      "age": 35,
+      "city": "Dortmund"
+    }
+  ]
+}

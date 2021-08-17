@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import "./static/css/dark.css";
 import App from "./App";
 import thunk from "redux-thunk";
