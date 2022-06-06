@@ -1,46 +1,584 @@
 {
-  "blogs": [
+  "engWord": [
     {
       "id": 1,
-      "name": "Stef",
-      "age": 25,
-      "city": "Banja Luka"
+      "eng_word": "Aim",
+      "srb_word": "Cilj"
     },
     {
-      "id": 2,
-      "name": "Marko",
-      "age": 34,
-      "city": "Sarajevo"
+      "eng_word": "Admin",
+      "srb_word": "Priznati",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Dan",
-      "age": 17,
-      "city": "NewYork"
+      "eng_word": "Accuse of",
+      "srb_word": "Optužiti za",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Cab",
-      "age": 43,
-      "city": "Berlin"
+      "eng_word": "Admitted ",
+      "srb_word": "Primljen",
+      "id": 4
     },
     {
-      "id": 5,
-      "name": "David",
-      "age": 44,
-      "city": "Munich"
+      "eng_word": "Afford",
+      "srb_word": "Priuštiti",
+      "id": 5
     },
     {
-      "id": 6,
-      "name": "Kevin",
-      "age": 19,
-      "city": "Madrid"
+      "eng_word": "Ancient",
+      "srb_word": "Drevni",
+      "id": 6
     },
     {
-      "id": 7,
-      "name": "Wendell",
-      "age": 35,
-      "city": "Dortmund"
+      "eng_word": "Bait",
+      "srb_word": "Mamac",
+      "id": 7
+    },
+    {
+      "eng_word": "Barbaric",
+      "srb_word": "Varvarski",
+      "id": 8
+    },
+    {
+      "eng_word": "Birth rate",
+      "srb_word": "Natalitet",
+      "id": 9
+    },
+    {
+      "eng_word": "Blame for",
+      "srb_word": "Kriviti za nešto",
+      "id": 10
+    },
+    {
+      "eng_word": "Blink",
+      "srb_word": "Treptati",
+      "id": 11
+    },
+    {
+      "eng_word": "Cable car",
+      "srb_word": "Žičara",
+      "id": 12
+    },
+    {
+      "eng_word": "Blunt",
+      "srb_word": "Direktan",
+      "id": 13
+    },
+    {
+      "eng_word": "Character",
+      "srb_word": "Lik iz romana",
+      "id": 14
+    },
+    {
+      "eng_word": "Chewing gum",
+      "srb_word": "Žvakaća guma",
+      "id": 15
+    },
+    {
+      "eng_word": "Determine",
+      "srb_word": "Odrediti",
+      "id": 16
+    },
+    {
+      "eng_word": "Eye strain ",
+      "srb_word": "Naprezanje očiju",
+      "id": 17
+    },
+    {
+      "eng_word": "Labour",
+      "srb_word": "Radnički",
+      "id": 18
+    },
+    {
+      "eng_word": "Lettuce",
+      "srb_word": "Zelena salata",
+      "id": 19
+    },
+    {
+      "eng_word": "Maturity",
+      "srb_word": "Zrelost",
+      "id": 20
+    },
+    {
+      "eng_word": "Premature",
+      "srb_word": "Privremeni",
+      "id": 21
+    },
+    {
+      "eng_word": "Social",
+      "srb_word": "Društvo",
+      "id": 22
+    },
+    {
+      "eng_word": "Suspended bridge",
+      "srb_word": "Viseći most",
+      "id": 23
+    },
+    {
+      "eng_word": "Stare",
+      "srb_word": "Buljiti",
+      "id": 24
+    },
+    {
+      "eng_word": "Tribute",
+      "srb_word": "Priznanje",
+      "id": 25
+    },
+    {
+      "eng_word": "Whine",
+      "srb_word": "Cviliti",
+      "id": 26
+    },
+    {
+      "eng_word": "Audience",
+      "srb_word": "Odvažan",
+      "id": 27
+    },
+    {
+      "eng_word": "Hang",
+      "srb_word": "Visiti",
+      "id": 28
+    },
+    {
+      "eng_word": "Footbridge",
+      "srb_word": "Pješački most",
+      "id": 29
+    },
+    {
+      "eng_word": "Tacky",
+      "srb_word": "Kičav",
+      "id": 30
+    },
+    {
+      "eng_word": "Blured",
+      "srb_word": "Zamućen",
+      "id": 31
+    },
+    {
+      "eng_word": "Cave",
+      "srb_word": "Pećina",
+      "id": 32
+    },
+    {
+      "eng_word": "Discomfort",
+      "srb_word": "Nelagodnost",
+      "id": 33
+    },
+    {
+      "eng_word": "Funeral",
+      "srb_word": "Sahrana",
+      "id": 34
+    },
+    {
+      "eng_word": "Fur",
+      "srb_word": "Krzno",
+      "id": 35
+    },
+    {
+      "eng_word": "Insure",
+      "srb_word": "Osigurati",
+      "id": 36
+    },
+    {
+      "eng_word": "Insurance",
+      "srb_word": "Osiguranje",
+      "id": 37
+    },
+    {
+      "eng_word": "Sting",
+      "srb_word": "Ubosti",
+      "id": 38
+    },
+    {
+      "eng_word": "Weigh",
+      "srb_word": "Težiti",
+      "id": 39
+    },
+    {
+      "eng_word": "Witty",
+      "srb_word": "Duhovit",
+      "id": 40
+    },
+    {
+      "eng_word": "Workforce",
+      "srb_word": "Radna snaga",
+      "id": 41
+    },
+    {
+      "eng_word": "Rapid",
+      "srb_word": "Brz",
+      "id": 42
+    },
+    {
+      "eng_word": "Rely on",
+      "srb_word": "Oslonoti se na",
+      "id": 43
+    },
+    {
+      "eng_word": "Retirement",
+      "srb_word": "Povlačenje",
+      "id": 44
+    },
+    {
+      "eng_word": "Salvation",
+      "srb_word": "Spasenje",
+      "id": 45
+    },
+    {
+      "eng_word": "Shot",
+      "srb_word": "Vakcina",
+      "id": 46
+    },
+    {
+      "eng_word": "Soil",
+      "srb_word": "Zemljište",
+      "id": 47
+    },
+    {
+      "eng_word": "Storm",
+      "srb_word": "Oluja",
+      "id": 48
+    },
+    {
+      "eng_word": "Survey",
+      "srb_word": "Anketa",
+      "id": 49
+    },
+    {
+      "eng_word": "Temporarily",
+      "srb_word": "Privremeno",
+      "id": 50
+    },
+    {
+      "eng_word": "Trial",
+      "srb_word": "Sudjenje",
+      "id": 51
+    },
+    {
+      "eng_word": "Vote",
+      "srb_word": "Glas",
+      "id": 52
+    },
+    {
+      "eng_word": "Verdict",
+      "srb_word": "Presuda",
+      "id": 53
+    },
+    {
+      "eng_word": "Willingness",
+      "srb_word": "Spremnost",
+      "id": 54
+    },
+    {
+      "eng_word": "Remedy",
+      "srb_word": "Lijek",
+      "id": 55
+    },
+    {
+      "eng_word": "Scarcity",
+      "srb_word": "Deficit",
+      "id": 56
+    },
+    {
+      "eng_word": "Accuracy",
+      "srb_word": "Tačnost",
+      "id": 57
+    },
+    {
+      "eng_word": "Accidentally",
+      "srb_word": "Slučajno",
+      "id": 58
+    },
+    {
+      "eng_word": "Aid",
+      "srb_word": "Pomoć",
+      "id": 59
+    },
+    {
+      "eng_word": "Agreement",
+      "srb_word": "Sporazum",
+      "id": 60
+    },
+    {
+      "eng_word": "Appreciate",
+      "srb_word": "Cijeniti",
+      "id": 61
+    },
+    {
+      "eng_word": "Bias",
+      "srb_word": "Predrasuda",
+      "id": 62
+    },
+    {
+      "eng_word": "Bigotry",
+      "srb_word": "Fanatizam",
+      "id": 63
+    },
+    {
+      "eng_word": "Bury",
+      "srb_word": "Zakopati",
+      "id": 64
+    },
+    {
+      "eng_word": "Claim",
+      "srb_word": "Tvrdnja",
+      "id": 65
+    },
+    {
+      "eng_word": "Clothesline",
+      "srb_word": "Štrik",
+      "id": 66
+    },
+    {
+      "eng_word": "Collaborate",
+      "srb_word": "Saradjivati",
+      "id": 67
+    },
+    {
+      "eng_word": "Come across",
+      "srb_word": "Naići na nešto",
+      "id": 68
+    },
+    {
+      "eng_word": "Come up",
+      "srb_word": "Iskrsnuti",
+      "id": 69
+    },
+    {
+      "eng_word": "Come up with",
+      "srb_word": "Smisliti",
+      "id": 70
+    },
+    {
+      "eng_word": "Compare",
+      "srb_word": "Porediti",
+      "id": 71
+    },
+    {
+      "eng_word": "Consciously",
+      "srb_word": "Svjesno",
+      "id": 72
+    },
+    {
+      "eng_word": "Concrete",
+      "srb_word": "Beton",
+      "id": 73
+    },
+    {
+      "eng_word": "Contract",
+      "srb_word": "Ugovor",
+      "id": 74
+    },
+    {
+      "eng_word": "Counterpart",
+      "srb_word": "Kolega",
+      "id": 75
+    },
+    {
+      "eng_word": "Cure",
+      "srb_word": "Lijek",
+      "id": 76
+    },
+    {
+      "eng_word": "Deny",
+      "srb_word": "Poricati",
+      "id": 77
+    },
+    {
+      "eng_word": "Conscious",
+      "srb_word": "Svjestan",
+      "id": 78
+    },
+    {
+      "eng_word": "Diversity",
+      "srb_word": "Raznolikost",
+      "id": 79
+    },
+    {
+      "eng_word": "Drag",
+      "srb_word": "Vući",
+      "id": 80
+    },
+    {
+      "eng_word": "Dust",
+      "srb_word": "Prašina",
+      "id": 81
+    },
+    {
+      "eng_word": "Elections",
+      "srb_word": "Izbori",
+      "id": 82
+    },
+    {
+      "eng_word": "Enable",
+      "srb_word": "Omogućiti",
+      "id": 83
+    },
+    {
+      "eng_word": "Encourage",
+      "srb_word": "Ohrabriti",
+      "id": 84
+    },
+    {
+      "eng_word": "Endanger",
+      "srb_word": "Dovesti u opasnost",
+      "id": 85
+    },
+    {
+      "eng_word": "Enrich",
+      "srb_word": "Obogatiti",
+      "id": 86
+    },
+    {
+      "eng_word": "Entrepreneurship",
+      "srb_word": "Preduzetništvo",
+      "id": 87
+    },
+    {
+      "eng_word": "Entourage",
+      "srb_word": "Pratnja",
+      "id": 88
+    },
+    {
+      "eng_word": "Entry",
+      "srb_word": "Ulazak",
+      "id": 89
+    },
+    {
+      "eng_word": "Environment",
+      "srb_word": "Okruženje",
+      "id": 90
+    },
+    {
+      "eng_word": "Essential",
+      "srb_word": "Osnovni",
+      "id": 91
+    },
+    {
+      "eng_word": "Extraordinary",
+      "srb_word": "Neobičan",
+      "id": 92
+    },
+    {
+      "eng_word": "Fraud",
+      "srb_word": "Prevara",
+      "id": 93
+    },
+    {
+      "eng_word": "Infallible",
+      "srb_word": "Nepogrešiv",
+      "id": 94
+    },
+    {
+      "eng_word": "Injustice",
+      "srb_word": "Nepravda",
+      "id": 95
+    },
+    {
+      "eng_word": "Jab",
+      "srb_word": "Vakcina",
+      "id": 96
+    },
+    {
+      "eng_word": "Harmful",
+      "srb_word": "Štetan",
+      "id": 97
+    },
+    {
+      "eng_word": "Holder",
+      "srb_word": "Vlasnik",
+      "id": 98
+    },
+    {
+      "eng_word": "Host",
+      "srb_word": "Domaćin",
+      "id": 99
+    },
+    {
+      "eng_word": "Misunderstanding",
+      "srb_word": "Nesporazum",
+      "id": 100
+    },
+    {
+      "eng_word": "Novel way",
+      "srb_word": "Novi način",
+      "id": 101
+    },
+    {
+      "eng_word": "Ordinary",
+      "srb_word": "Običan",
+      "id": 102
+    },
+    {
+      "eng_word": "Persistent",
+      "srb_word": "Uporan",
+      "id": 103
+    },
+    {
+      "eng_word": "Prejudice",
+      "srb_word": "Predrasuda",
+      "id": 104
+    },
+    {
+      "eng_word": "Leap",
+      "srb_word": "Skok",
+      "id": 105
+    },
+    {
+      "eng_word": "Lend",
+      "srb_word": "Pozajmiti nekome",
+      "id": 106
+    },
+    {
+      "eng_word": "Major",
+      "srb_word": "Veliki",
+      "id": 107
+    },
+    {
+      "eng_word": "Manufactured",
+      "srb_word": "Proizveden",
+      "id": 108
+    },
+    {
+      "eng_word": "Market",
+      "srb_word": "Pijaca",
+      "id": 109
+    },
+    {
+      "eng_word": "Mayor",
+      "srb_word": "Gradonačelnik",
+      "id": 110
+    },
+    {
+      "eng_word": "Measure",
+      "srb_word": "Mjera",
+      "id": 111
+    },
+    {
+      "eng_word": "Motorist",
+      "srb_word": "Vozač",
+      "id": 112
+    },
+    {
+      "eng_word": "Murder",
+      "srb_word": "Ubistvo",
+      "id": 113
+    },
+    {
+      "eng_word": "Necessity",
+      "srb_word": "Neophodnost",
+      "id": 114
+    },
+    {
+      "eng_word": "Obstacle",
+      "srb_word": "Prepreka",
+      "id": 115
+    },
+    {
+      "eng_word": "Overcast",
+      "srb_word": "Oblačan",
+      "id": 116
     }
   ]
 }

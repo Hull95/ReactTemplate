@@ -1,6 +1,21 @@
 {
   "blogs": [
     {
+      "title": "Stef2",
+      "blog_title": "test",
+      "id": 1
+    },
+    {
+      "title": "Stef",
+      "blog_title": "123",
+      "id": 7
+    },
+    {
+      "title": "Stef :D ",
+      "blog_title": "213",
+      "id": 9
+    },
+    {
       "title": "Test history1",
       "blog_title": "test",
       "id": 13
@@ -19,6 +34,11 @@
       "title": "123",
       "blog_title": "123",
       "id": 16
+    },
+    {
+      "title": "123",
+      "blog_title": "123",
+      "id": 17
     },
     {
       "title": "1231",

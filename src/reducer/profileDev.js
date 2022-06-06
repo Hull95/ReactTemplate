@@ -1,17 +1,22 @@
 const initState = {
-  data: [],
+    data: [],
 };
 
 const fetchDataProfile = (state = initState, action) => {
-  switch (action.type) {
-    case "GET_ALL_DATA":
-      return {
-        ...state,
-        data: action.data,
-      };
-    default:
-      return state;
-  }
+    switch (action.type) {
+        case "GET_ALL_DATA":
+            return {
+                ...state,
+                data: action.data,
+            };
+        case "DELETE_POSITION":
+            return {
+                ...state,
+                data: action.data
+            }
+        default:
+            return state;
+    }
 };
 
 export default fetchDataProfile;
